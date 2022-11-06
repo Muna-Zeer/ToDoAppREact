@@ -1,0 +1,83 @@
+.items-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.items-list .item {
+    list-style-type: none;
+    background-color: #E8D3FF;
+    color: #000;
+    font-size: 21px;
+    margin-bottom: 4px;
+    display: flex;
+    width: 35vw;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 4px solid green;
+}
+
+.items-list .item h2 {
+    font-size: 15px;
+    color: blueviolet;
+}
+
+.items-list .item.urgent {
+    border-left: 4px solid red;
+}
+
+.items-list .item.actions {
+    /* display: flex;
+     */
+
+}
+
+.checkItem {
+    background-color: #91C788;
+    color: #000;
+    padding: 10px;
+    width: 55px;
+    text-align: center;
+    margin: 10px;
+}
+
+.actions {
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-end;
+
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.delItem {
+   padding: 3px;
+   margin-bottom: 10px;
+   background-color: #E23E57;
+
+}
+
+.category-list {
+    text-align: end;
+
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.list .item .actions button:not([disabled]):hover {
+    opacity: 0.8;
+}
+
+.list .item .actions button:not([disabled]):active {
+    position: relative;
+    right: -1px;
+    bottom: -1px;
+}
+
+.list .item .actions button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
